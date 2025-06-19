@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_profile"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.evirgenoguz.presentation.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordBottomSheetDialog"
+            app:destination="@id/changePasswordBottomSheetDialog" />
+        <action
+            android:id="@+id/action_profileFragment_to_changeLocationFragment"
+            app:destination="@id/changeLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.evirgenoguz.presentation.profile.editprofile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile">
+
+        <argument
+            android:name="userModel"
+            app:argType="com.evirgenoguz.domain.model.profile.ProfileUserModel"
+            app:nullable="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/changePasswordBottomSheetDialog"
+        android:name="com.evirgenoguz.presentation.profile.ChangePasswordBottomSheetDialog"
+        android:label="ChangePasswordBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_change_password" />
+
+    <fragment
+        android:id="@+id/changeLocationFragment"
+        android:name="com.evirgenoguz.presentation.profile.changelocation.ChangeLocationFragment"
+        android:label="fragment_change_location"
+        tools:layout="@layout/fragment_change_location">
+
+        <deepLink app:uri="togather://change_location" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".group.create.CreateGroupFragment">
+
+    <ImageView
+        android:id="@+id/imageViewCreateGroupLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_96dp"
+        android:contentDescription="@string/location"
+        android:src="@drawable/ic_location_auth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCreateGroupDescription"
+        style="@style/DescriptionTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:gravity="center"
+        android:minLines="3"
+        android:text="@string/create_group_description"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCreateGroupLocation" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldJoinGroupGroupName"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:hint="@string/group_name"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@id/textViewCreateGroupDescription">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputJoinGroupGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldCreateGroupGroupDescription"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:hint="@string/group_description"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@id/textFieldJoinGroupGroupName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputCreateGroupGroupDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLoginLogin"
+        style="@style/Widget.App.RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_xxlarge"
+        android:layout_marginTop="@dimen/spacing_xxxlarge"
+        android:text="@string/create_group"
+        app:layout_constraintTop_toBottomOf="@id/textFieldCreateGroupGroupDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

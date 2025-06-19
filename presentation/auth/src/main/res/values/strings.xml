@@ -1,0 +1,4 @@
+<resources>
+    <string name="password_rules">Password must be at least 8 characters long and include an uppercase letter, a lowercase letter, and a number</string>
+    <string name="change_password">Change Password</string>
+</resources>

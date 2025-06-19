@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TransparentDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:backgroundDimAmount">0.5</item> <!-- Adjust transparency -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.App.RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">32dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">#6B4C3B</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:minWidth">180dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.App.RoundedButtonSmall" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">32dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">#6B4C3B</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="EditText.Togather" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/colorSurfaceContainer</item>
+        <item name="boxStrokeColor">@color/colorOnSurfaceVariant</item>
+        <item name="hintTextColor">@color/colorOnSurfaceVariant</item>
+        <item name="android:textColorHint">@color/colorOnSurfaceVariant</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorControlActivated">@color/colorOnSurface</item>
+    </style>
+
+    <style name="TogatherDropdown" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/colorSurfaceContainer</item>
+        <item name="boxStrokeColor">@color/colorOnSurfaceVariant</item>
+        <item name="hintTextColor">@color/colorOnSurfaceVariant</item>
+        <item name="android:textColorHint">@color/colorOnSurfaceVariant</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="colorControlActivated">@color/colorOnSurface</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.Material3.Light">
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariant</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSecondaryContainer">@color/colorSecondaryContainer</item>
+    </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ToolbarTitleTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">0.25</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="titleTextAppearance">@style/ToolbarTitleTextStyle</item>
+    </style>
+
+    <style name="DescriptionTextStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TogatherTextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textSize">14sp</item>
+        <item name="iconTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+</resources>

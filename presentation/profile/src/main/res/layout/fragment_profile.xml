@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_xlarge">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutUserCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewHomeAvatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_circle_avatar"
+                android:backgroundTint="@color/colorSecondaryContainer"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_avatar_placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircleImage"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/textViewHomeUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/imageViewHomeAvatar"
+                app:layout_constraintTop_toTopOf="@id/imageViewHomeAvatar"
+                tools:text="Oguz Evirgen" />
+
+            <TextView
+                android:id="@+id/textViewHomeUserNickName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_2dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_xsmall"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/imageViewHomeAvatar"
+                app:layout_constraintTop_toBottomOf="@id/textViewHomeUserName"
+                tools:text="oguz3virgen" />
+
+            <TextView
+                android:id="@+id/textViewHomeUserBiography"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_2dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toEndOf="@id/imageViewHomeAvatar"
+                app:layout_constraintTop_toBottomOf="@id/textViewHomeUserNickName"
+                tools:text="Friendly Ordinary Man" />
+
+            <TextView
+                android:id="@+id/textViewHomeUserCredit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewHomeAvatar"
+                app:layout_constraintEnd_toStartOf="@+id/textViewHomeCreditTitle"
+                app:layout_constraintStart_toEndOf="@id/imageViewHomeAvatar"
+                tools:text="Credibility: 87/100" />
+
+            <TextView
+                android:id="@+id/textViewHomeCreditTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintBottom_toBottomOf="@id/textViewHomeUserCredit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewHomeUserCredit"
+                tools:text="Reliable" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewNotEnoughInfoForUserCard"
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_information_warning"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/layoutUserCard"
+            app:layout_constraintTop_toTopOf="@id/layoutUserCard"
+            tools:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProfileActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxlarge"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/textViewDeleteAccount"
+            app:layout_constraintTop_toBottomOf="@id/layoutUserCard"
+            app:layout_constraintVertical_bias="0"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_profile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDeleteAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/spacing_xxlarge"
+            android:text="@string/profile_delete_account"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

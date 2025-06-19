@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creategroupevent.setlocation.SetGroupEventLocationFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragmentSetLocationMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewSetLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/background_search"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchHintOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:paddingHorizontal="@dimen/spacing_xxlarge"
+        android:text="@string/search_location"
+        app:layout_constraintBottom_toBottomOf="@id/searchViewSetLocation"
+        app:layout_constraintEnd_toEndOf="@id/searchViewSetLocation"
+        app:layout_constraintStart_toStartOf="@id/searchViewSetLocation"
+        app:layout_constraintTop_toTopOf="@id/searchViewSetLocation" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabGroupDetailCreateGroupEvent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:backgroundTint="@color/colorSurfaceContainerHigh"
+        android:contentDescription="@string/set_location"
+        android:text="@string/set_location"
+        android:textColor="@color/colorPrimary"
+        app:iconTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

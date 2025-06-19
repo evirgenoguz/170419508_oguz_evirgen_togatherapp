@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToGather</string>
+    <string name="version_name">1.0.0</string>
+
+    <string name="error_disk_full">Failed to save the item because your disk is full.</string>
+    <string name="error_request_timeout">The request timed out.</string>
+    <string name="error_too_many_requests">You\'ve hit your rate limit.</string>
+    <string name="error_no_internet">Couldn\'t reach server, please check your connection.</string>
+    <string name="error_payload_too_large">The file you\'re trying to upload is too large.</string>
+    <string name="error_server_error">Oops, something went wrong, please try again.</string>
+    <string name="error_serialization">Oops, couldn\'t parse data.</string>
+    <string name="error_unknown">An unknown error occurred.</string>
+
+    <!--    PlaceHolder    -->
+    <string name="jungle">Jungle</string>
+    <string name="jungle_of_3_event">Jungle of 3 event</string>
+    <string name="jungle_of_3_group">Jungle of 3 group</string>
+
+    <!--    General    -->
+    <string name="location">Location</string>
+    <string name="search_location">Search Location</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="settings">Settings</string>
+    <string name="close">Close</string>
+    <string name="create">Create</string>
+    <string name="navigate">navigate</string>
+    <string name="next_event">Next Event</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!--    Login    -->
+    <string name="login_description">ToGather: Plan, Meet, Connect \n Where Every Gathering Starts.</string>
+    <string name="dont_you_have_an_account">Don\'t have an account? \t Register</string>
+    <string name="already_have_an_account">Already have an account? \t Login</string>
+    <string name="events">Events</string>
+    <string name="groups">Groups</string>
+    <string name="home">Home</string>
+
+    <!--   Home  -->
+    <string name="event_card_thumbnail">Event Card Thumbnail</string>
+    <string name="create_event">Create Event</string>
+    <string name="join_group">Join Group</string>
+    <string name="create_group">Create Group</string>
+    <string name="credit">Credit: %1$d</string>
+
+    <!--  Create Group  -->
+    <string name="group_name">Group Name</string>
+    <string name="invite_code">Invite Code</string>
+    <string name="group_description">Group Description</string>
+    <string name="create_group_description">Bring your people together – Create a group and start planning memorable moments!</string>
+
+    <!--  Join Group  -->
+    <string name="join_group_description">Jump in and connect – Enter a group code to join the fun!</string>
+    <string name="decrease">Decrease</string>
+    <string name="increase">Increase</string>
+
+</resources>

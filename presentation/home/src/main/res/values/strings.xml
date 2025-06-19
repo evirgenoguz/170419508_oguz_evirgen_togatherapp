@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_group_text">You don\'t have any group you can join or create a new group</string>
+    <string name="no_event_text">You haven\'t attended any event, check out the events on For You page</string>
+    <string name="set_location">Set Location</string>
+    <string name="cancel">Cancel</string>
+    <string name="set_location_description">You should set your location to see nearby events</string>
+</resources>

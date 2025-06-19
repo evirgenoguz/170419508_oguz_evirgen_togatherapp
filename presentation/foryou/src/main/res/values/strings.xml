@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="campaigns">Campaigns</string>
+    <string name="campaign_image">Campaign Image</string>
+    <string name="direction">Direction</string>
+</resources>

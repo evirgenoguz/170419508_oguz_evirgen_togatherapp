@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/groupMemberCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/spacing_small"
+    app:cardBackgroundColor="@color/colorSurface"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/colorOutline"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_12dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewGroupMemberCardAvatar"
+            android:layout_width="@dimen/spacing_40dp"
+            android:layout_height="@dimen/spacing_40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_avatar"
+            android:backgroundTint="@color/colorSecondaryContainer"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_avatar_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/textViewGroupMemberUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            android:layout_marginEnd="@dimen/spacing_12dp"
+            android:text="@string/jungle"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/imageViewGroupDetailMemberKickUser"
+            app:layout_constraintStart_toEndOf="@id/imageViewGroupMemberCardAvatar"
+            app:layout_constraintTop_toTopOf="@id/imageViewGroupMemberCardAvatar" />
+
+        <TextView
+            android:id="@+id/textViewGroupMemberRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jungle_of_3_group"
+            android:textColor="#666666"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewGroupMemberCardAvatar"
+            app:layout_constraintEnd_toEndOf="@id/textViewGroupMemberUsername"
+            app:layout_constraintStart_toStartOf="@id/textViewGroupMemberUsername"
+            app:layout_constraintTop_toBottomOf="@id/textViewGroupMemberUsername" />
+
+        <ImageView
+            android:id="@+id/imageViewGroupDetailMemberKickUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_12dp"
+            android:contentDescription="@string/kick_user"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

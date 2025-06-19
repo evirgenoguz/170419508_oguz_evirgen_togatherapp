@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editprofile.EditProfileFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewEditProfileAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_12dp"
+        android:background="@drawable/bg_circle_avatar"
+        android:backgroundTint="@color/colorSecondaryContainer"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_avatar_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/textViewEditProfileEditAvatar"
+        style="@style/DescriptionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4dp"
+        android:text="@string/edit"
+        app:layout_constraintEnd_toEndOf="@id/imageViewEditProfileAvatar"
+        app:layout_constraintStart_toStartOf="@id/imageViewEditProfileAvatar"
+        app:layout_constraintTop_toBottomOf="@id/imageViewEditProfileAvatar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileName"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:hint="@string/name"
+        app:layout_constraintTop_toBottomOf="@id/textViewEditProfileEditAvatar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileLastName"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:hint="@string/lastname"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditProfileLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileNickname"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:hint="@string/nickname"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileLastName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditProfileNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileBio"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:hint="@string/biography"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileNickname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditProfileBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileBirtDate"
+        style="@style/EditText.Togather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:hint="@string/birthday"
+        app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileBio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditProfileBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEditProfileGender"
+        style="@style/TogatherDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:hint="@string/gender"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileBirtDate">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEditProfileUpdate"
+        style="@style/Widget.App.RoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_xxlarge"
+        android:layout_marginTop="@dimen/spacing_40dp"
+        android:text="@string/update"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEditProfileGender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

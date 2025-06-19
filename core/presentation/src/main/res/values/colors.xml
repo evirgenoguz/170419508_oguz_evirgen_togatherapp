@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+
+    <!--  Material  -->
+    <!-- Primary brand colors -->
+    <color name="colorPrimary">#8C4F27</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#FFDBC8</color>
+    <color name="colorOnPrimaryContainer">#3A2B24</color>
+
+    <!-- Secondary -->
+    <color name="colorSecondary">#8C6C5A</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#FFDBC8</color>
+    <color name="colorOnSecondaryContainer">#2B1609</color>
+
+    <!-- Tertiary -->
+    <color name="colorTertiary">#E8E5AC</color>
+    <color name="colorOnTertiary">#FFFFFF</color>
+    <color name="colorTertiaryContainer">#DAD2C4</color>
+    <color name="colorOnTertiaryContainer">#2F2A22</color>
+
+    <!-- Error -->
+    <color name="colorError">#B3261E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorErrorContainer">#F9DEDC</color>
+    <color name="colorOnErrorContainer">#410E0B</color>
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#FFFBFE</color>
+    <color name="colorOnBackground">#1C1B1F</color>
+
+    <color name="colorSurface">#FFF8F5</color>
+    <color name="colorOnSurface">#221A15</color>
+    <color name="colorSurfaceVariant">#E7E0EC</color>
+    <color name="colorOnSurfaceVariant">#52443C</color>
+
+    <color name="colorSurfaceContainer">#FCEAE2</color>
+    <color name="colorSurfaceContainerLow">#FBF8F5</color>
+    <color name="colorSurfaceContainerHigh">#F6E5DD</color>
+    <color name="colorSurfaceContainerHigh1A">#1AF6E5DD</color>
+
+    <!-- Outline & borders -->
+    <color name="colorOutline">#85746B</color>
+    <color name="colorOutlineVariant">#D7C2B8</color>
+
+    <!-- Inverse (for dark/light mode contrasts) -->
+    <color name="colorInverseSurface">#313033</color>
+    <color name="colorInverseOnSurface">#F4EFF4</color>
+    <color name="colorInversePrimary">#D0BCFF</color>
+
+    <!-- Shadow -->
+    <color name="colorShadow">#000000</color>
+
+
+    <color name="outer_space">#484848</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/spacing_small"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/colorSurface"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/colorOutline"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEventCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_12dp"
+            android:layout_weight="14">
+
+            <TextView
+                android:id="@+id/eventCardAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_circle_avatar"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="J" />
+
+            <TextView
+                android:id="@+id/textViewEventCardEventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_4dp"
+                android:text="@string/jungle"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/eventCardAvatar"
+                app:layout_constraintTop_toTopOf="@id/eventCardAvatar" />
+
+            <TextView
+                android:id="@+id/textViewEventCardEventDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jungle_of_3_event"
+                android:textColor="#666666"
+                app:layout_constraintBottom_toBottomOf="@id/eventCardAvatar"
+                app:layout_constraintEnd_toEndOf="@id/textViewEventCardEventName"
+                app:layout_constraintStart_toStartOf="@id/textViewEventCardEventName"
+                app:layout_constraintTop_toBottomOf="@id/textViewEventCardEventName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutEventCardImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/eventCardEmoji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_4dp"
+                android:background="@drawable/bg_circle_avatar"
+                android:gravity="center"
+                android:minWidth="@dimen/spacing_80dp"
+                android:minHeight="@dimen/spacing_80dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="J" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
